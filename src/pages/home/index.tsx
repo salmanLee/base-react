@@ -5,9 +5,9 @@ export default function Page() {
   return (
     <div>
       {routeConfig.map((item) => (
-        <Link key={item} to={item}>
-          {item}
-        </Link>
+        <div key={item}>
+          <Link to={item}>{item}</Link>
+        </div>
       ))}
     </div>
   );
